@@ -35,6 +35,13 @@ or to create a conda environment for running OpenFlamingo, run
 conda env create -f environment.yml
 ```
 
+Install locally for development
+```
+git clone https://github.com/kaishengyao/open_flamingo
+cd open_flamingo
+python3 -m pip install -e . -r requirements.txt
+```
+
 # Usage
 We provide an initial [OpenFlamingo 9B model](https://huggingface.co/openflamingo/OpenFlamingo-9B) using a CLIP ViT-Large vision encoder and a LLaMA-7B language model. In general, we support any [CLIP vision encoder](https://huggingface.co/models?search=clip). For the language model, we support [LLaMA](https://huggingface.co/models?search=llama), [OPT](https://huggingface.co/models?search=opt), [GPT-Neo](https://huggingface.co/models?search=gpt-neo), [GPT-J](https://huggingface.co/models?search=gptj), and [Pythia](https://huggingface.co/models?search=pythia) models.
 
